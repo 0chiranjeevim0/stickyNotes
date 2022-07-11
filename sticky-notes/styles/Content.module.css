@@ -1,0 +1,34 @@
+.contentMainContainer{
+    width:100%;
+    height:100vh;
+    background-color:#f71735;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.loginContainer{
+    width:40%;
+    height:60%;
+    background-color:white;
+    margin-top:40px;
+    border-radius:20px;
+    padding:10px;
+}
+.subContainer{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+@media(max-width:768px){
+    .loginContainer{
+        width:90%;
+        height:60%;
+        background-color:white;
+        margin-top:40px;
+        border-radius:20px;
+        padding:10px;
+    }
+}
