@@ -26,7 +26,7 @@ const Home = () =>{
       console.log(err);
     })
   }
-  //signout();
+  // signout();
   return(
     <div className="">
       <Head>

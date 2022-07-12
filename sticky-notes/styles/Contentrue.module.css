@@ -1,5 +1,16 @@
 .contentMainContainer{
     width:100%;
-    height:100vh;
+    height: 100vh;
     background-color:#f71735;
+    display:flex;
+    
+}
+.contentPostContainer{
+    margin-top:100px;
+    display: flex;
+    height:fit-content;
+    flex-wrap:wrap;
+    width:100%;
+    background-color:#f71735;
+    justify-content:space-around;
 }
