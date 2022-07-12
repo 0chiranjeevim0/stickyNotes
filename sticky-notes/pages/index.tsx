@@ -37,7 +37,7 @@ const Home = () =>{
 
       {/* conditional rendering render component based on the login status */}
       {
-        (authstate?<Contentrue />:<Content />)
+        (authstate?<Contentrue uid={authstate} />:<Content />)
       }
     </div>
   )
