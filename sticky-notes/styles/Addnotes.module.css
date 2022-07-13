@@ -1,0 +1,27 @@
+.maincontainer{
+    width:100%;
+    height:100vh;
+    background-color:#f71735;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.formcontainer{
+    width:50%;
+    height:60%;
+    border-radius: 20px;
+    background-color:white;
+    padding:20px;
+}
+.gobackActive{
+    display:block;
+}
+.goback{
+    display:none
+}
+@media(max-width:768px){
+    .formcontainer{
+        width:90%;
+        height:50%;
+    }
+}

@@ -9,8 +9,10 @@ import {onAuthStateChanged,signOut} from 'firebase/auth';
 
 const Home = () =>{
   //state to moniter userid
+  //window.location.href ="./addtodo"
   const[authstate, setAuthstate] = useState('');
-
+  const [title, setTitle] = useState();
+  console.log(title);
   onAuthStateChanged(auth,(user)=>{
     if(user){
       setAuthstate(user.uid);

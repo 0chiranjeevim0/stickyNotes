@@ -42,3 +42,8 @@
     background-color:#011627;
     padding-bottom:17.5px;
 }
+.sidebarButtonContainer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}

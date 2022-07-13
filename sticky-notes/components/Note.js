@@ -1,5 +1,5 @@
 import styles from '../styles/Notes.module.css'
-import {doc ,setDoc,collection} from 'firebase/firestore';
+import {doc ,setDoc,collection,deleteDoc} from 'firebase/firestore';
 import {firestore} from '../firebase/firebase';
 import { BookmarkIcon } from '@heroicons/react/solid';
 const Note = (props) =>{
@@ -13,6 +13,10 @@ const Note = (props) =>{
             priority:0
         }
         setDoc(docRef,data,{merge:true});
+    }
+    const deleteNote = () =>{
+        let docRef = doc(firestore,props.uid,props.id)
+        deleteDoc(docRef);
     }
     const resetPriority = () =>{
         let docId = props.id;
@@ -39,7 +43,7 @@ const Note = (props) =>{
                 <p className="text-gray-700 text-base">{props.data.caption}</p>
                 
                 <div className="mb-4">
-                    <button className="buttonStyle text-white  py-2 px-4 rounded mt-2">Remove</button>
+                    <button onClick={deleteNote} className="buttonStyle text-white  py-2 px-4 rounded mt-2">Remove</button>
                     
                         {
                             (props.data.priority!=0?

@@ -1,4 +1,4 @@
-import {MenuIcon} from '@heroicons/react/outline';
+import {MenuIcon,PlusIcon} from '@heroicons/react/outline';
 import styles from '../styles/Navbar.module.css';
 import React,{useState} from 'react';
 
@@ -31,6 +31,13 @@ const Navbar = (props) =>{
             <div className={(sidebar?styles.sidebarContainerActive:styles.sidebarContainer)}>
                 <div className={styles.sidebarLogoContainer}>
                     <h1 className={styles.sidebarLogo}>StickyNotes</h1>
+                </div>
+                <div className={styles.sidebarButtonContainer}>
+
+                    <div className="buttonStyle text-white py-4 px-2 m-5 rounded inline-flex items-center justify-center">
+                        <PlusIcon className="w-5 h-5 ml-2" />
+                        <a href="./addtodo" className="mx-2">Add New Note</a>
+                    </div>
                 </div>
             </div>
        </div>
